@@ -16,7 +16,44 @@ This project is a test automation framework using Playwright and Pytest for end-
 
 ## Low-Level Design
 
+
 ### Folder Structure
+
+```
+Playwright_demo1/
+├── conftest.py
+├── pytest.ini
+├── README.md
+├── requirements.txt
+├── assets/
+│   └── style.css
+├── pages/
+│   ├── orangehrm_home_page.py
+│   ├── orangehrm_login_page.py
+│   └── __pycache__/
+├── reports/
+│   └── report.html
+├── test_data/
+│   ├── data.csv
+│   └── data.json
+├── test_results/
+│   └── ...trace.zip
+├── tests/
+│   ├── first_test.py
+│   ├── test_datadrivendemo-codegen.py
+│   ├── test_datadrivenfromjson.py
+│   ├── test_google.py
+│   ├── test_login_orangehrm.py
+│   ├── test_rec_1-codegen.py
+│   ├── test_sample.py
+│   ├── test-datadrivenfromfile.py
+│   └── api/
+│       ├── get_api_assertion.py
+│       └── test_api_get.py
+├── utils/
+└── ...
+```
+
 - `tests/` — Contains all test scripts (e.g., login, API, data-driven tests)
 - `pages/` — Page Object Model classes for each web page
 - `test_data/` — CSV/JSON files for test data
